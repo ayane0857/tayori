@@ -12,7 +12,7 @@ export default function RootLayout() {
     return (
         <>
             <Header />
-            <div className="main2">
+            <div className="main">
                 <div className="ih">
                     <div className="main-title">
                         <Image src="/icon.png" height={180} width={180} alt="icon" className="icon" />
