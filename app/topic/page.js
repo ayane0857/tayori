@@ -6,7 +6,7 @@ import { useState } from 'react';
 export const runtime = 'edge';
 import Image from 'next/image'
 import Header from '../../components/header.js'
-import Footer from '../components/footer.js'
+import Footer from '../../components/footer.js'
 
 export default function RootLayout() {
     return (
