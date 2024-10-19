@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      width: 50vw;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <img id="character" src="defo.png" alt="キャラクター">
+
+  <script>
+    const character = document.getElementById('character');
+    const images = ['defo.png', 'yosiyosi.png'];
+    const originalImage = 'defo.png';
+    let lastMouseX = 0;
+    let timeoutId;
+
+    function resetImage() {
+      character.src = originalImage;
+    }
+
+    // For mouse events
+    document.addEventListener('mousemove', (event) => {
+      const mouseX = event.clientX;
+
+      if (lastMouseX === 0) {
+        lastMouseX = mouseX;
+      }
+
+      if (Math.abs(mouseX - lastMouseX) > 50) {
+        character.src = "yosiyosi.png";
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(resetImage, 300);
+      }
+    });
+
+    document.addEventListener('touchmove', (event) => {
+      const touchX = event.touches[0].clientX;
+
+      if (lastMouseX === 0) {
+        lastMouseX = touchX;
+      }
+
+      if (Math.abs(touchX - lastMouseX) > 30) {
+        character.src = "yosiyosi.png";
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(resetImage, 300);
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      lastMouseX = 0;
+    });
+
+    document.addEventListener('touchend', () => {
+      lastMouseX = 0;
+    });
+  </script>
+</body>
+
+</html>
