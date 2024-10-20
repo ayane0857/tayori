@@ -7,6 +7,10 @@ export const runtime = 'edge';
 import Image from 'next/image'
 import Header from '../../components/header.js'
 import Footer from '../../components/footer.js'
+export const metadata = {
+    title: 'ゲーム',
+    description: 'たよりさんのかわいいミニゲームができます',
+}
 
 export default function RootLayout() {
     return (

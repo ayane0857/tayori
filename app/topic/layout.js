@@ -1,5 +1,10 @@
 import "../globals.css";
 export const runtime = 'edge';
+export const metadata = {
+  title: 'トピック',
+  description: '現在メンテナンス中',
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
