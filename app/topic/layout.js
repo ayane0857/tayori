@@ -3,7 +3,7 @@ export const runtime = 'edge';
 export function generateMetadata() {
   return {
     title: 'トピック',
-    description: '現在メンテナンス中',
+    description: '最近の話題',
   };
 }
 
