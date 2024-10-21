@@ -9,7 +9,7 @@ import Image from 'next/image'
 function Fia({ url, icon, alt }) {
     return (
         <a href={url}>
-            <div className="relative w-14 h-14 rounded-lg p-1.5 dark:bg-slate-200">
+            <div className="relative w-14 h-14 rounded-lg p-1.5 bg-white dark:bg-slate-200">
                 <div className="absolute inset-0 border border-black rounded-lg"></div>
                 <Image
                     src={icon}
@@ -47,9 +47,9 @@ export default function RootLayout() {
                 </div>
                 <div className={`${isActive ? 'han-memu' : 'unactive'} flex justify-center grid justify-items-stretch items-center`}>
                     <ul>
-                        <li><Link href="./">ホーム</Link></li>
-                        <li><Link href="./profile">プロフィール</Link></li>
-                        <li><Link href="./game">ゲーム</Link></li>
+                        <li><Link href="/">ホーム</Link></li>
+                        <li><Link href="/profile">プロフィール</Link></li>
+                        <li><Link href="/game">ゲーム</Link></li>
                     </ul>
                 </div>
             </div>

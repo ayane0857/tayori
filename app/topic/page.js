@@ -12,15 +12,10 @@ export default function RootLayout() {
     return (
         <>
             <Header />
-            <div className="ih main">
-                <h1 className="text-2xl font-semibold">Topic</h1>
-                <Link
-                    href="/post/1"
-                    className="block transition duration-150 ease-in-out rounded-md p-4"
-                >
-                    <h3 className="text-xl mb-2">
-                        音さん10万人突破
-                    </h3>
+            <div class="ih main max-w-xl mx-auto">
+                <h1 class="text-2xl font-light pb-3 border-b border-gray-200">Topic</h1>
+                <Link href="/topic/1" class="block py-4 border-b border-gray-200 transition duration-300 hover:text-blue-500">
+                    <h3 class="text-lg font-normal">音さん10万人突破</h3>
                 </Link>
             </div>
             <Footer />

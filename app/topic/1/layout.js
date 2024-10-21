@@ -1,9 +1,9 @@
-import "../globals.css";
+import "../../globals.css";
 export const runtime = 'edge';
 export function generateMetadata() {
   return {
-    title: 'たよりさん10万人突破',
-    description: 'たよりさんのYoutubeチャンネルが10万人を突破しました',
+    title: 'トピック',
+    description: '最近の話題',
   };
 }
 
