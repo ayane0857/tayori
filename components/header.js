@@ -48,6 +48,7 @@ export default function RootLayout() {
                 <div className={`${isActive ? 'han-memu' : 'unactive'} flex justify-center grid justify-items-stretch items-center`}>
                     <ul>
                         <li><Link href="/">ホーム</Link></li>
+                        <li><Link href="/topic">トピック</Link></li>
                         <li><Link href="/profile">プロフィール</Link></li>
                         <li><Link href="/game">ゲーム</Link></li>
                     </ul>
