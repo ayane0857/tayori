@@ -13,10 +13,10 @@ export default function RootLayout() {
       <div className="main">
         <div className="imgheader"></div>
         <br /><br />
-        <ul className="flex justify-between text-center md:text-2xl lg:text-4xl">
-          <li className="flex-1"><Link href="./topic">トピック</Link></li>
-          <li className="shrink-0 w-64"><Link href="./profile">プロフィール</Link></li>
-          <li className="flex-1"><Link href="./game">ゲーム</Link></li>
+        <ul className="flex items-center justify-between w-full px-4 text-lg md:text-2xl lg:text-4xl whitespace-nowrap">
+          <li className="flex-shrink-0"><Link href="./topic">トピック</Link></li>
+          <li className="flex-shrink-0"><Link href="./profile">プロフィール</Link></li>
+          <li className="flex-shrink-0"><Link href="./game">ゲーム</Link></li>
         </ul>
       </div>
       <Footer />
