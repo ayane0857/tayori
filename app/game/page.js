@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Header from '../../components/header.js'
 import Footer from '../../components/footer.js'
 
-const metadata = {
+export const metadata = {
     title: 'ゲーム',
     description: 'たよりさんのかわいいミニゲームができます'
 };
