@@ -1,11 +1,9 @@
 import "./globals.css";
 export const runtime = 'edge';
-export function generateMetadata() {
-  return {
-    title: 'ホーム',
-    description: 'たよりさんのホームページのホーム',
-  };
-}
+export const metadata = {
+  title: 'ホーム',
+  description: 'たよりさんのホームページのホーム',
+};
 
 export default function RootLayout({ children }) {
   return (
