@@ -1,9 +1,4 @@
-"use client";
-
-import Link from "next/link";
 import "../globals.css";
-import { useState } from 'react';
-import Image from 'next/image'
 import Header from '../../components/header.js'
 import Footer from '../../components/footer.js'
 
@@ -12,7 +7,7 @@ export const metadata = {
     description: 'たよりさんのかわいいミニゲームができます'
 };
 
-export default function Game() {
+export default function GameLayout({ children }) {
     return (
         <>
             <Header />
@@ -20,6 +15,7 @@ export default function Game() {
                 <iframe src="./game.html" className="iframe69" frameBorder="0" allowFullScreen />
                 <h1 className="text-4xl md:text-2xl">よしよしゲーム</h1>
                 <p>マウスや指をたよりさんの上で左右に動かすとよしよしできます</p>
+                {children}
             </div>
             <Footer />
         </>

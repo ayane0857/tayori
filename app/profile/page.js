@@ -1,8 +1,4 @@
-"use client";
-
-import Link from "next/link";
 import "../globals.css";
-import { useState } from 'react';
 export const runtime = 'edge';
 import Image from 'next/image'
 import Header from '../../components/header.js'
@@ -12,7 +8,7 @@ export const metadata = {
     description: 'たよりさんについてまとめてます',
 };
 
-export default function Profile() {
+export default function Layout({ children }) {
     return (
         <>
             <Header />
