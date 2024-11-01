@@ -12,7 +12,7 @@ export const metadata = {
     description: 'たよりさんについてまとめてます',
 };
 
-export default function RootLayout() {
+export default function Profile() {
     return (
         <>
             <Header />
