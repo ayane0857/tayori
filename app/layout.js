@@ -2,7 +2,7 @@ import "./globals.css";
 export const runtime = 'edge';
 export const metadata = {
   title: 'ホーム',
-  description: 'たよりさんのホームページのホーム',
+  description: 'たよりさんのホームページ',
 };
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
