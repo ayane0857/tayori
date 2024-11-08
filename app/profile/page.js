@@ -7,11 +7,13 @@ export const metadata = {
     title: 'プロフィール',
     description: 'たよりさんについてまとめてます',
 };
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Layout({ children }) {
     return (
         <>
             <Header />
+            <GoogleAnalytics gaId="G-XD9P316J50" />
             <div className="main">
                 <div className="ih">
                     <div className="main-title">
