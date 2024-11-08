@@ -13,7 +13,7 @@ const games = [
     id: 2,
     name: "お菓子上げゲーム",
     description: "たよりさんにお菓子を上げれます",
-    iframeUrl: "https://tayorig.pages.com/"
+    iframeUrl: "https://tayorig.pages.dev/"
   }
 ]
 
@@ -44,20 +44,20 @@ export default function GamesList() {
         ))}
       </div>
       {selectedGame && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg p-6 max-w-4xl w-full">
-            <div className="space-y-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white rounded-lg p-4 w-full h-full max-w-[95vw] max-h-[95vh] flex flex-col">
+            <div className="flex-1 min-h-0">
               <iframe
                 src={selectedGame.iframeUrl}
-                className="w-full h-96 rounded-lg"
+                className="w-full h-full rounded-lg"
                 title={selectedGame.name}
               />
-              <div className="text-center">
-                <h2 className="text-2xl font-bold">{selectedGame.name}</h2>
-                <p className="text-gray-600 mt-2">{selectedGame.description}</p>
-              </div>
+            </div>
+            <div className="mt-4 text-center">
+              <h2 className="text-2xl font-bold">{selectedGame.name}</h2>
+              <p className="text-gray-600 mt-2">{selectedGame.description}</p>
               <button
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
                 onClick={closeGameDetails}
               >
                 Close
