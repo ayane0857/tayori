@@ -55,11 +55,10 @@ export default function RootLayout() {
                 </div>
             </div>
             <div className="fixed bottom-4 right-4 flex flex-col space-y-4">
-                <Fia url="https://www.youtube.com/channel/UCO-M9EilpZtUr-44QuUxI2w" icon="/youtube.png" alt="音さんのYoutubeアカウント" />
-                <Fia url="https://x.com/Tayori8739" icon="/twitter.png" alt="音さんのXアカウント" />
-                <Fia url="https://x.com/Tayorisabu" icon="/twitter.png" alt="音さんのXアカウント(サブ)" />
+                <Fia url="https://www.youtube.com/channel/UCO-M9EilpZtUr-44QuUxI2w" icon="/youtube.webp" alt="音さんのYoutubeアカウント" />
+                <Fia url="https://x.com/Tayori8739" icon="/twitter.webp" alt="音さんのXアカウント" />
                 <Fia url="https://twitcasting.tv/tayori8739" icon="/twitcasting.webp" alt="音さんのツイキャスアカウント" />
-                <Fia url="https://marshmallow-qa.com/tayori8739" icon="/marsmallow.png" alt="音さんのマシュマロ" />
+                <Fia url="https://marshmallow-qa.com/tayori8739" icon="/marsmallow.webp" alt="音さんのマシュマロ" />
             </div>
         </div>
     );

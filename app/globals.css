@@ -86,7 +86,7 @@
 .imgheader {
   width: 100%;
   padding-top: 25%;
-  background-image: url(/header-img.png);
+  background-image: url(/header-img.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
