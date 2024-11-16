@@ -4,7 +4,6 @@ import Link from "next/link";
 import "./globals.css";
 export const runtime = 'edge';
 import Header from '../components/header.js'
-import Footer from '../components/footer.js'
 
 export default function RootLayout() {
   return (
@@ -19,7 +18,6 @@ export default function RootLayout() {
           <li className="flex-shrink-0"><Link href="./game">ゲーム</Link></li>
         </ul>
       </div>
-      <Footer />
     </>
   );
 }

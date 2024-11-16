@@ -6,7 +6,6 @@ import { useState } from 'react';
 export const runtime = 'edge';
 import Image from 'next/image'
 import Header from '../../components/header.js'
-import Footer from '../../components/footer.js'
 
 export default function RootLayout() {
     return (
@@ -18,7 +17,6 @@ export default function RootLayout() {
                     <h3 class="text-lg font-normal">音さん10万人突破</h3>
                 </Link>
             </div>
-            <Footer />
         </ >
     );
 }
