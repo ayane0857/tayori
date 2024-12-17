@@ -11,13 +11,18 @@ export default function RootLayout() {
       <Header />
       <div className="main">
         <div className="imgheader"></div>
-        <br /><br />
-        <ul className="flex items-center justify-between w-full px-4 text-lg md:text-2xl lg:text-4xl whitespace-nowrap">
-          <li className="flex-shrink-0"><Link href="./topic">トピック</Link></li>
-          <li className="flex-shrink-0"><Link href="./profile">プロフィール</Link></li>
-          <li className="flex-shrink-0"><Link href="./game">ゲーム</Link></li>
-        </ul>
-      </div>
+        <main className="min-h-screen bg-background">
+          <div className="container mx-auto px-4">
+            <nav className="w-full px-4 py-6">
+              <ul className="flex items-center justify-between text-lg md:text-2xl lg:text-3xl">
+                <li><Link href="./topic" className="hover:text-primary transition-colors">トピック</Link></li>
+                <li><Link href="./profile" className="hover:text-primary transition-colors">プロフィール</Link></li>
+                <li><Link href="./game" className="hover:text-primary transition-colors">ゲーム</Link></li>
+              </ul>
+            </nav>
+          </div>
+        </main >
+      </div >
     </>
   );
 }

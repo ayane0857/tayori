@@ -6,7 +6,6 @@ export const metadata = {
     title: 'プロフィール',
     description: 'たよりさんについてまとめてます',
 };
-import { GoogleAnalytics } from '@next/third-parties/google'
 function ProfileItem({ label, value }) {
     return (
         <div className="border-b border-gray-200 dark:border-gray-700 pb-2">
@@ -20,7 +19,6 @@ export default function Layout({ children }) {
     return (
         <>
             <Header />
-            <GoogleAnalytics gaId="G-XD9P316J50" />
             <div className="main">
                 <div className="ih">
                     <div className="main-title">
